@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoomAnimation</title>
+    <link rel="stylesheet" href="../demo.css">
+    </link>
+</head>
+
+<body>
+    <div id="interactive-demo-container">
+        <div class="device-container">
+            <div class="device">
+                <button class="like-button"></button>
+                <div id="cursor-container">
+                    <div class="cursorr"></div>
+                </div>
+                
+                <div class="canvas-container"></div>
+            </div>
+        </div>
+        <div class="configuration">
+            <div class="controlpanel-container parameter-adjusting">
+                <div class="cell">
+                    <div class="d-flex-row-spacebetween">
+                        <span id="amount-tag">数量</span>
+                        <span id="amount-value">10</span>
+                    </div>
+                    <input type="range" min="1" max="10" value="5" class="slider" id="particle-amount">
+                </div>
+                <div class="cell">
+                    <div class="d-flex-row-spacebetween">
+                        <span id="gravity-tag">重力</span>
+                        <span id="gravity-value">10</span>
+                    </div>
+                    <input type="range" min="1" max="10" value="5" class="slider" id="gravity">
+                </div>
+            </div>
+            <div class="controlpanel-container">
+                <ul id="animation-options">
+                    <li class="cell active" id="option_gravity">重力</li>
+                    <li class="cell" id="option_colision3d">三维碰撞</li>
+                    <li class="cell" id="option_float">三维上浮</li>
+                    <li class="cell" id="option_cohesion">凝聚</li>
+                    <li class="cell" id="option_showAndFall">涟漪</li>
+                    <li class="cell" id="option_spaceRotate">点阵</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./lib/other-functions.js"></script>
+    <script src="./lib/three.js"></script>
+    <script src="./lib/particle.js"></script>
+    <script src="./lib/particleSystem.js"></script>
+
+    <script src="./main.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
